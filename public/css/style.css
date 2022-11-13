@@ -1,0 +1,27 @@
+.container {
+    margin-top: 16px;
+}
+
+.center-div {
+    width: 50%;
+    margin: auto;
+}
+
+.center {
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.login-logo {
+    height: 50px;
+}
+
+.nav-logo {
+    margin-top: -12px;
+}
+.message-error {
+    color: red;
+}

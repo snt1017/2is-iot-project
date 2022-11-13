@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html ng-app="angLocApp">
+
+<head>
+  <title>Login - Plankton</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="/js/tools.js"></script>
+  <script src="/ngIndex.js"></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+
+  <div ng-controller="IndexController">
+
+    <div class="container">
+
+
+
+      <!-- <button ng-click="sendSocketEvent()" type="button" class="btn btn-primary">Send socket event</button> -->
+
+      <div class="center-div">
+        <div class="text-center">
+          <img class="login-logo" src="images/logo.png" />
+          <h1>Plankton</h1>
+        </div>
+        <div class="row">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Username</label>
+            <input class="form-control" id="username" ng-model="credentials.username">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" ng-model="credentials.password">
+          </div>
+          <div class="text-center">
+            <p class="message-error" id="login-error" style="visibility:hidden;"></p>
+            <button ng-click="login()" class="btn btn-primary mb-3">Login</button>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
